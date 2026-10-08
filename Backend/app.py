@@ -53,7 +53,7 @@ def generate_speech(text, voice_id, locale):
    
     url = "https://global.api.murf.ai/v1/speech/stream"
     headers = {
-        "api-key": MURF_API_KEY,
+        "api-key": murf_api_key,
         "Content-Type": "application/json"
     }
     data = {
