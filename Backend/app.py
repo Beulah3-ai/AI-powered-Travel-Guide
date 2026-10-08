@@ -54,7 +54,7 @@ def generate_speech(text, voice_id, locale):
    
     url = "https://global.api.murf.ai/v1/speech/stream"
     headers = {
-        "api-key": MURF_API_KEY,
+        "api-key": murf_api_key,
         "Content-Type": "application/json"
     }
     data = {
@@ -111,4 +111,5 @@ def generate_audio_guide():
         "audioBase64": encoded_audio
                 }
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
