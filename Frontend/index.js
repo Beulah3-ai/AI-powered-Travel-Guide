@@ -178,5 +178,3 @@ transcriptToggle.addEventListener('click', () => {
   transcriptContent.classList.toggle('hidden');
   transcriptArrow.classList.toggle('rotate-180');
 });
-if __name__ == "__main__":
-    app.run()
