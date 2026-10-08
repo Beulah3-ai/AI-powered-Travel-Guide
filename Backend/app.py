@@ -24,9 +24,8 @@ Focus on:
 Keep the explanation concise, engaging, and easy to follow.
 Avoid excessive details and dates.
 Limit the response to around 200 words.
-s
 Respond ONLY in {language}.
-""",
+"""
 
     "Detailed": """
 You are a professional tourist guide.
@@ -111,4 +110,5 @@ def generate_audio_guide():
         "audioBase64": encoded_audio
                 }
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
