@@ -25,7 +25,7 @@ Keep the explanation concise, engaging, and easy to follow.
 Avoid excessive details and dates.
 Limit the response to around 200 words.
 Respond ONLY in {language}.
-"""
+""",
 
     "Detailed": """
 You are a professional tourist guide.
