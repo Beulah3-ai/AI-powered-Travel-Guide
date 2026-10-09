@@ -21,3 +21,9 @@ An AI-powered travel guide that generates travel information and audio guides us
 - AI-generated travel descriptions
 - Audio travel guides
 - Multiple language and voice options
+- Search for tourist places
+📖 Generate historical information
+🔊 Generate AI-powered audio guides
+🌐 Multilingual support
+🎙️ Voice selection / customization
+📝 Text transcript
