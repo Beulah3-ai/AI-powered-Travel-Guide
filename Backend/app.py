@@ -2,13 +2,25 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from flask import Flask, jsonify, request
-import flask_cors
+from flask_cors import CORS
 from google import genai
 import requests
 import tempfile
 import base64
 app = Flask(__name__)
-flask_cors.CORS(app)
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://ai-powered-travel-guide-frontend-19egdt8vx.vercel.app",
+                "https://ai-powered-travel-guide-frontend-19uovbx8x.vercel.app"
+            ]
+        }
+    },
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"]
+)
 murf_api_key = os.getenv("MURF_API_KEY")
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 PROMPTS = {
